@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="/css/default.css"/>
+        <h:outputStylesheet name="/css/cssLayout.css"/>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body id="PlanificacionEstrategica">
+        <div id="top" >
+            <ui:insert name="top">Top</ui:insert>
+            <!-- Este si funcionad 
+            <div id="encabezado">
+                <p:breadCrumb style="background: #045491">                   
+                    <p:menuitem value="casa" url="index.xhtml" />                    
+                    <p:menuitem value="Basketball" url="#" /> 
+                    <p:menuitem value="Teams" url="#" />
+                    <p:menuitem value="L.A. Lakers" url="#" />
+                    <p:menuitem value="Integrantes" url="Integrantes.xhtml" />
+                    <p:menuitem value="Login" url="#"/>
+                </p:breadCrumb>
+            </div>   -->
+            <div id="MenuOpciones">
+
+                <h:form id="forma">  
+                    <p:growl id="messages"/>
+
+                    <p:menubar>
+                        <p:submenu label="Integrantes" icon="pi pi-file">
+                            <p:menuitem value="Diego Bahamonde" url="#" />
+                            <p:menuitem value="Bryan Imbaquingo" url="#" />
+                            <p:menuitem value="Mario Suin" url="#" />
+                            <p:separator />
+                            <p:menuitem value="Mas Sobre los Integrantes" url="Integrantes.xhtml" />
+                        </p:submenu>     
+                        <p:menuitem value="Quit" url="index.xhtml" icon="pi pi-times" />
+
+                        <p:submenu label="Ingresar" icon="pi pi-file">
+                            <p:menuitem value="Login" url="Login.xhtml" />
+                            <p:menuitem value="Registrarte" url="#" />                         
+                        </p:submenu> 
+                    </p:menubar>
+                </h:form>
+            </div>
+        </div> <!-- Cierre Encabezado-->
+
+        <div id="left">
+            <ui:insert name="left">Left</ui:insert>
+            <div>
+                <h:form>  
+                    <p:growl id="messages" showDetail="true" />
+
+                    <p:tieredMenu style="width:200px">
+                        <p:submenu label="Archivos Planos" >
+                            <p:menuitem value="ARCHIVOS"/>
+
+                        </p:submenu>
+                        <p:submenu label="Requerimientos">
+                            <p:menuitem value="Casos de Uso" url="Casos_Uso.xhtml"/>
+                        </p:submenu>  
+
+
+                        <p:submenu label="Planificacion Estratégica" icon="pi pi-clone">
+                            <p:menuitem value="Mision/Vision/Valores" url="PlanificacionEstrategica.xhtml"/>
+                        </p:submenu> 
+
+                    </p:tieredMenu>
+
+
+                </h:form>
+            </div>
+
+        </div><!--Cierre panel left-->
+
+
+        <!--Imagen doble-->
+        <div id="content" class="left_content" align="center">
+            <ui:insert name="content">Planificacion Estratégica</ui:insert>
+            <div>
+                <table id="tablaPlaE" border="1" style="color: #B1C43B">
+                    <tr>
+                        <td >
+                            <h2 align="center">Misiòn</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="justify"><h3>Coordinar, normar y evaluar la producción de la información estadística oficial proveniente del Sistema
+                                Estadístico Nacional, mediante la planificación, ejecución y análisis de operaciones estadísticas oportunas
+                                y confiables, así como de la generación de estudios especializados que contribuyan a la toma de decisiones 
+                                públicas y privadas y a la planificación nacional</h3></p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3 align="center">Visiòn</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="justify">
+                            <p>Ser un referente a nivel nacional e internacional por la calidad, oportunidad e innovación en la producción de
+                                información estadística, en la articulación de las entidades del Sistema Estadístico Nacional y en la generación
+                                de conocimiento a través de estudios especializados.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <div>
+                 
+                 <p:imageCompare leftImage="/img/bandera_ecu.jpg"
+                                 rightImage="img/piesitos.jpeg"                
+                                 width="350" height="335"/>
+             </div>  -->              
+        </div><!-- cierro contenido-->
+    </h:body>
+</html>
+
