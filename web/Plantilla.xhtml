@@ -14,9 +14,9 @@
     </h:head>
 
     <h:body>
-
+<!-- TOP-->
         <div id="top" >
-            <ui:insert name="top">Top</ui:insert>
+            <ui:insert name="top"></ui:insert>
             <!-- Este si funcionad 
             <div id="encabezado">
                 <p:breadCrumb style="background: #045491">                   
@@ -29,10 +29,8 @@
                 </p:breadCrumb>
             </div>   -->
             <div id="MenuOpciones">
-
                 <h:form id="forma">  
                     <p:growl id="messages"/>
-
                     <p:menubar>
                         <p:submenu label="Integrantes" icon="pi pi-file">
                             <p:menuitem value="Diego Bahamonde" url="#" />
@@ -52,10 +50,10 @@
             </div>
         </div> <!-- Cierre Encabezado-->
 
-
+<!-- left-->
         <div>
             <div id="left">
-                <ui:insert name="left">Left</ui:insert>
+                <ui:insert name="left"></ui:insert>
                 <div>
                     <h:form>  
                         <p:growl id="messages" showDetail="true" />
